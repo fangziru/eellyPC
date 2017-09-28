@@ -1,0 +1,28 @@
+.s_hotSell {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: "Microsoft Yahei"; }
+
+.s_hotSell_con {
+  background: white; }
+
+.s_hotSell_con > div {
+  float: left; }
+
+div.s_sell_women {
+  width: 199px;
+  height: 499px;
+  background: pink; }
+
+div.s_sell_list {
+  width: 748px;
+  height: 510px;
+  background: palegreen; }
+
+div.s_sell_rank {
+  width: 250px;
+  height: 500px;
+  background: paleturquoise;
+  border-left: 1px solid #F1F1F1; }
+
+/*# sourceMappingURL=indexAdd.css.map */

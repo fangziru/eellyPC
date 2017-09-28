@@ -1,0 +1,24 @@
+html,body,p,div,h1,h2,h3,h4,h5,h6,form,table,tr,td,th,hr,form,dl,dd,dt,figure,ul,li,input,img{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-size: 12px;
+	font-family: tahoma,arial,SimSun;
+	background: #f1f1f1;
+	/*height: 1000px;*/
+}
+.clear{
+	overflow: hidden;
+	display: block;
+}
+img{
+	border: none;
+	display: block;
+}
