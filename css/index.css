@@ -1,3 +1,6 @@
+body{
+	background: #f1f1f1;
+}
 /*header*/
 header{
 	background: white;
@@ -41,7 +44,19 @@ header .s_head_nav .s_head_nav1{
 	color: #666;
 }
 header .s_head_nav .s_head_nav1 span{
-	margin-left:15px ;
+	margin-left:16px ;
+}
+header .s_head_nav .s_head_nav1 span a:first-child{
+	margin-right: 8px;
+}
+header .s_head_nav .s_head_nav1 span a:last-child{
+	margin-left: 8px;
+}
+header .s_head_nav .s_head_nav1 .span_line{
+    color: #ccc;
+    font-style: normal;
+    position: relative;
+    top: -1px;
 }
 header a{
 	display: inline-block;
@@ -248,70 +263,93 @@ header .s_head_nav2 .s_net_right dl:nth-child(4) dt{
 }
 header .s_head_nav2 .s_nav_net .s_net_con .s_net_right dl{
 	width: 25%;
-	float: left;水果
+	float: left;
 	text-align: center;
+}
+header .s_head_nav2 .s_nav_entry{
+    margin-left: 10px;
 }
 header .s_head_nav2 .s_nav_entry a{
 	padding: 0;
-	margin-left: 9px;
+	/*margin-left: 9px;*/
 	color: #437dd0;
 }
 header .s_head_nav2 .s_nav_entry a span{
-	background: #437dd0;
-	height: 14px;
-	color: white;
-	margin-right: 6px;
-	/*font-size: 14px;*/
+    display: inline-block;
+    background: #437dd0;
+    height: 15px;
+    line-height: 15px;
+    width: 28px;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    margin-right: 8px;
+    position: relative;
+    margin-top: -1px;
+    
 }
 header .s_head_nav2 .s_nav_entry a span .s_entry_icon{
-	position: absolute;
-	display: block;
-	width: 0;
-	height: 0;
-	border-width: 8px 5px;
-	border-color: transparent transparent transparent #437dd0;
-	border-style: solid;
-	left:33px;
-	top: 8px;
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 7.5px 5px;
+    border-color: transparent transparent transparent #437dd0;
+    border-style: solid;
+    right: -10px;
+    top: 0px;
 }
 
-header .s_head_main{
-	width: 1200px;
-	margin: 0 auto;
+.s_logo_search{
+	background: white;
+	width: 100%;
 }
-header .s_head_main .s_logo{
+.s_logo_search .s_head_main{
+	width: 1200px;
+	height: 126px;
+	margin: 0 auto;
+	background: white;
+}
+.s_logo_search .s_head_main .s_logo{
 	float: left;
 }
-header .s_head_main a{
+.s_logo_search .s_head_main a{
 	width: 388px;
 	height: 120px;
 	overflow: hidden;
 }
-header .s_head_main .s_code{
+.s_logo_search .s_head_main .s_code{
 	width: 200px;
 	float: right;
 	text-align: center;
+	margin-top: 6px;
+	color: #666666;
+	font-family: "微软雅黑";
+	p{
+		line-height: 18px;
+		letter-spacing: 1;
+	}
 }
-header .s_head_main .s_code a{
+.s_logo_search .s_head_main .s_code a{
 	display: block;
 	width: 100px;
 	height: 100px;
 	margin: 0 auto;
 }
-header .s_head_main .s_code img{
+.s_logo_search .s_head_main .s_code img{
 	width: 100%;
 	height: 100%;
 	display: block;
 	/*margin: 0 auto;*/
 }
-header .s_search{
+.s_logo_search .s_search{
 	float: right;
 	margin-top:34px ;
 }
-header .s_search .s_search_box{
+.s_logo_search .s_search .s_search_box{
 	width: 530px;
 }
-header .s_search #search_box{
+.s_logo_search .s_search .search_box{
 	display: block;
 	float: left;
 	width: 440px;
@@ -321,7 +359,7 @@ header .s_search #search_box{
 	outline: none;
 	text-indent: 10px;
 }
-header .s_search #search{
+.s_logo_search .s_search .search{
 	display: block;
 	float: left;
 	width: 78px;
@@ -332,22 +370,47 @@ header .s_search #search{
 	background: url(../img/spriter.png) no-repeat -5px -316px ;
 	cursor: pointer;
 }
-header .s_search #search:hover{
+.s_logo_search .s_search .search:hover{
 	opacity: .7;
 }
-header .s_head_main .s_search p{
+.s_logo_search .s_head_main .s_search p{
 	line-height: 30px;
 	padding-top: 3px;
 }
-header .s_head_main .s_search p a{
+.s_logo_search .s_head_main .s_search p a{
 	display: inline;
+	color: #666;
 	font-family: "微软雅黑";
 }
-header .s_head_main .s_search p a +a{
+.s_logo_search .s_head_main .s_search p a +a{
 	margin-left:8px ;
 }
-header .s_head_main .s_search p a:hover{
+.s_logo_search .s_head_main .s_search p a:hover{
 	color: #ca062c;
+}
+
+/*悬浮样式*/
+.s_xf{
+	position: fixed;
+	height: 48px;
+	top: -50px;
+	overflow: hidden;
+	z-index: 10000;
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	/*margin-top: -50px;*/
+}
+.s_logo_search .s_xf_search{
+	margin: 8px 0px 0px 45px;
+	width: 855px;
+	float: left;
+}
+.s_logo_search .s_search .xf_search_box{
+	width: 770px;
+	height: 30px;
+}
+.s_logo_search .s_search .xf_search{
+	height: 34px;
+	background-position:-5px -319px;
 }
 /*nav*/
 nav{

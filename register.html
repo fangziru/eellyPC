@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="shortcut icon" href="//static.eelly.com/favicon.ico?20141229">
+<link rel="stylesheet" type="text/css" href="css/public.css"/>
+<link rel="stylesheet" type="text/css" href="css/register.css"/>
+<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<header>
+		
+	</header>
+	
+	<div class="reg_con">
+		<div class="reg_inner">
+			<div class="reg_tit">
+				<h2>手机注册</h2>
+				<span class="reg_log">
+					已有账号？<a href="#">马上登录</a>或&nbsp;快速登录<a href="#" class="log_weixin"></a><a class="log_qq" href="#"></a>
+				</span>
+			</div>
+			<div class="reg_main">
+				<div class="reg_step">
+					<ul>
+						<li class="current">
+							<p>填写账户信息</p>
+							<span>1</span>
+						</li>
+						<li>
+							<p>验证手机</p>
+							<span>2</span>
+						</li>
+						<li class="step_last">
+							<p>注册完成</p>
+							<span>3</span>
+						</li>
+					</ul>
+					<div class="reg_line"></div>
+				</div>
+				<form action="" method="post">
+					<ul class="reg_ul">
+						<li>
+							<i class="reg_icon reg_icon1"></i>
+							<input type="text" class="reg_text" id="phone" name="phone" value="" placeholder="手机" maxlength="30"/>
+							<p class="reg_error error"></p>
+						</li>
+						<li>
+							<i class="reg_icon reg_icon2"></i>
+							<input type="password" class="reg_text" id="userPass" name="userPass" value="" placeholder="设置登录密码" maxlength="30"/>
+							<a href="#" id="eye"></a>
+							<p class="reg_error error">登录密码不能为空！</p>
+							<div class="tip_pwd">
+								<p class="tip_sj"></p>
+								<dl>
+									<dt>
+										
+										密码强度：<span class="pass_leve"></span>
+										<span class="pass_leve_txt" id="pass_leve_txt"></span>
+									</dt>
+									<dd>
+										<span></span>长度为6-16字符
+									</dd>
+									<dd>
+										<span></span>必须是数字、字母和符号 &nbsp;&nbsp;&nbsp;的组合密码
+									</dd>
+								</dl>
+							</div>
+						</li>
+						<li>
+							<i class="reg_icon reg_icon3"></i>
+							<input type="text" class="reg_text" id="checkPass" value="" placeholder="验证码" maxlength="4"/>
+							<p class="pic_yz">
+								<img src="img/index1.gif" width="70" height="30"/>
+								<a href="#" id="rash"></a>
+							</p>
+							<p class="reg_error error">请填写图形验证码！</p>
+						</li>
+						<li class="r_agree r_mar">
+							<input type="checkbox" name="agree" id="agree" value="1" /><span>我同意<a href="#">《衣联用户服务协议》</a></span><span>和<a href="#"> 《隐私申明》</a></span>
+							<p class="reg_error error agree_error"></p>
+						</li>
+						<li class="r_btn r_mar">
+							<input type="button" name="register" id="go_step" value="下一步" class="step_btn"/>
+							
+						</li>
+					</ul>
+				</form>
+				<div class="reg_success"></div>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="footer">
+			<div class="d_about">
+				<a href="#">关于衣联</a><a href="#">关于动态</a><a href="#">衣联招聘</a><a href="#">免费开店</a><a href="#">合作伙伴</a><a href="#" class="last">联系衣联</a>
+			</div>
+			<div class="d_copy">				
+				Copyright©2003-2017 Eelly.com All Right Reserved.广州市衣联网络科技有限公司 版权所有 <a href="#">隐私申明</a> <a href="#">粤ICP备10209547号</a> 公安备案号<a href="#">44010402000492</a>
+			</div>
+		</div>
+	</footer>
+	<div class="d_aside">
+		<div class="d_aside_con">
+			<div class="d_aside_con1">
+				<p>
+					<i>您对注册页面的建议</i>
+					<!--<span>&nbsp;</span>-->
+				</p>
+			</div>
+			<div class="d_aside_con2">
+				<div class="d_msg_box">
+					<p>您对注册页面的建议</p>
+					<div class="d_box_close">
+						<span title="关闭"></span>
+					</div>
+				</div>
+				<div class="d_msg_con">
+					<div class="d_tip">
+						<i></i>亲，此处为您对衣联网的建议反馈，买卖家沟通请使用QQ或衣联通。
+					</div>
+					<textarea name="" rows="" cols="">您留下的每一个建议都是我们不断改进的动力！</textarea>
+					<p>
+						<span>0/500</span>
+						<input type="submit" id="" name="" value="提交"/>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

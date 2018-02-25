@@ -1,0 +1,168 @@
+@charset "utf-8";
+@mixin box($width,$height){
+    width: $width+px;
+    height: $height+px;
+}
+.s_footer{
+    width: 1200px;
+    background: #292a2c;
+    margin: 0 auto;
+    font-family: "微软雅黑";
+    a{
+        color: #666;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .s_footer_nav{
+        padding-bottom: 30px;
+        border-bottom: 1px dotted #3f4042;
+        dl{
+            float: left;
+            margin-left: 8px;
+            margin-right: 16px;
+            width: 15%;
+            border-right: 1px solid #27282a;
+            dt{
+                color: #CCCCCC;
+                font-size: 16px;
+                margin-bottom: 7px;
+                span{
+                    @include box(26,26);
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                    background: url(../img/sitenav_icons.png) no-repeat 0 -60px;
+//                      position: relative;
+                }
+            }
+            dd{
+                text-indent: 34px;
+                line-height: 2;
+                height: 24px;
+                overflow: hidden;
+            }
+            a:hover{
+                color: #ffffff;
+            }
+        }
+        ul{
+            width: 158px;
+            float: left;
+            li{
+                height: 30px;
+                background:#1a1a1a url(../img/sprite.png) no-repeat -175px -65px;
+                a{
+                    display: block;
+                    @include box(128,30);
+//                      width: 128px;
+                    margin-left: 30px;
+                    background: #222222;
+                    text-align: center;
+                    line-height: 30px;
+                }
+                a:hover{
+                    background: #4e4e4e;
+                }
+            }
+            li + li{
+                margin-top: 14px;
+            }
+            li:nth-child(1){
+                font-size: 14px;
+                height: 21px;
+                color: #CCCCCC;
+                background: none;
+            }
+            li:nth-child(3){
+                background-position: -201px -65px;
+            }
+        }
+    }
+    .s_ft_sort{
+        padding: 6px 0;
+        line-height: 2;
+        color: #5c5c5c;
+        position: relative;
+        a{
+            color: #5C5C5C;
+        }
+        p{
+            height: 24px;
+            overflow: hidden;
+            padding-right: 50px;
+            a{
+                padding: 0 8px;
+                display: inline-block;
+                position: relative;
+            }
+            a:hover{
+                color: white;
+            }
+            a:first-child{
+                padding-left: 0;
+            }
+            a:before{
+                position: absolute;
+                top: 7px;
+                right: 0;
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: 12px;
+                background: #5C5C5C;
+            }
+        }
+        span{
+            @include box(15,15);
+            display: block;
+            position: absolute;
+            bottom: 10px;
+            right: 2px;
+            cursor: pointer;
+            background: url(../img/sitenav_icons.png) no-repeat -84px 0;
+        }
+        .sort_more{
+            display: none;
+        }
+    }
+    .s_ft_link{
+        border-top: 1px dotted #3F4042;
+        p{
+            overflow: visible;
+            height: auto;
+            padding: 0;
+        }
+    }
+    .s_ft_about{
+        padding: 18px 0 9px;
+        border-top: 1px dotted #3F4042;
+        a{
+            color: #999;
+        }
+    }
+    .s_ft_copy{
+        padding-bottom: 11px;
+        color: #999;
+        a{
+            color: #999;
+        }
+        a:hover{
+            color: white;
+        }
+    }
+    .s_ft_ul{
+        padding-bottom: 10px;
+        li{
+            float: left;
+            margin-right: 10px;
+            img{
+                opacity: 0.6;
+                height: 30px;
+            }
+            img:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
