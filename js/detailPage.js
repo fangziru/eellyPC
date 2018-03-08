@@ -44,12 +44,14 @@ $(function(){
 			let goodmsg=JSON.parse(data);
 			//console.log(goodmsg);	
 			$(".x_store_txt h2 span:last-child").html(goodmsg.goodsName);
-			$(".x_imgList ul").append(''+
-									'<li><a href="javascript:;"><img src="img/'+goodmsg.beiyong1+'"/></a></li>'+
-									'<li><a href="javascript:;"><img src="img/'+goodmsg.beiyong2+'"/></a></li>'+
-									'<li><a href="javascript:;"><img src="img/'+goodmsg.beiyong3+'"/></a></li>'+
-									'<li><a href="javascript:;"><img src="img/'+goodmsg.beiyong4+'"/></a></li>'+
-									'<li><a href="javascript:;"><img src="img/'+goodmsg.beiyong5+'"/></a></li>');
+			let strImgName=[goodmsg.beiyong1,goodmsg.beiyong2,goodmsg.beiyong3,goodmsg.beiyong4,goodmsg.beiyong5];
+			let strImg='';
+			for(let k=1;k<=5;k++){
+				if(strImgName[k-1]!=''){
+					strImg+='<li><a href="javascript:;"><img src="img/'+strImgName[k-1]+'"/></a></li>'
+				}
+			}
+			$(".x_imgList ul").append(strImg);
 			$(".x_img_box").append('<img src="img/'+goodmsg.beiyong1.replace("small_118_","small_640_")+'"/>')
 //			$(".size_price").html(goodmsg.goodsPrice);
 			
